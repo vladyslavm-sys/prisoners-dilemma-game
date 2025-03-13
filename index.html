@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симуляція дилеми вязня</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Симуляція дилеми вязня</h1>
+    <p>Виберіть стратегію для себе і виберіть стратегію комп'ютера:</p>
+
+    <div class="strategies">
+        <button onclick="play('cooperate')">Співпрацювати</button>
+        <button onclick="play('betray')">Зрадити</button>
+    </div>
+
+    <div>
+        <label for="computerStrategy">Стратегія комп'ютера:</label>
+        <select id="computerStrategy">
+            <option value="alwaysCooperate">Алтруїст</option>
+            <option value="alwaysBetray">Зрада</option>
+            <option value="titForTat">Тит-Фор-Тат</option>
+            <option value="random">Випадкова</option>
+        </select>
+    </div>
+
+    <div class="result">
+        <h2>Результат:</h2>
+        <p id="userChoice">Вибір користувача: <span></span></p>
+        <p id="computerChoice">Вибір комп'ютера: <span></span></p>
+        <p id="outcome">Вихід: <span></span></p>
+    </div>
+
+    <div class="score">
+        <h2>Загальний рахунок:</h2>
+        <p>Користувач: <span id="userScore">0</span></p>
+        <p>Комп'ютер: <span id="computerScore">0</span></p>
+    </div>
+</div>
+
+<script src="manual%20simulation%20/script.js"></script>
+</body>
+</html>
